@@ -29,3 +29,4 @@ with open(log_file, "w", encoding="utf-8") as log:
                             code = fault.get("errCode")
                             desc = fault.get("description")
                             log.write(f"  ➤ Строка {line}: Ошибка {code} — {desc}\n")
+##a
