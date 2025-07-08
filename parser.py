@@ -27,6 +27,5 @@ with open(log_file, "w", encoding="utf-8") as log:
                         if fault.tag.endswith("fault"):
                             line = fault.get("line")
                             code = fault.get("errCode")
-                            desc = fault.get("description")
-                            log.write(f"  ➤ Строка {line}: Ошибка {code} — {desc}\n")
-##a
+                            description = fault.get("description")
+                            log.write(f"  ➤ Строка {line}: Ошибка {code} — {description}\n")
